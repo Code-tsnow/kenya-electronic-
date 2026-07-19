@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#f68b1e">
+        <title>Electronics Kenya | Shop with confidence</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" size="512x512px" href="aba59010-9793-4346-aa05-668b14757ed6.png">`
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="topbar">
+            <span>Free delivery in Nairobi for orders over KES 5,000</span>
+            <span>
+                Need help? <a href="tel:+254780826179">Call us</a>
+            </span>
+        </div>
+        <header class="site-header">
+            <a class="brand" href="#top" aria-label="ELECTRONICS KENYA home">
+                <span>ELECTRONICS</span>
+                KENYA
+            </a>
+            <form class="search" id="searchForm" role="search">
+                <input id="searchInput" type="search" placeholder="Search TVs, phones, appliances…" autocomplete="off">
+                <button aria-label="Search">⌕</button>
+                <div class="suggestions" id="suggestions"></div>
+            </form>
+            <div class="header-actions">
+                <button class="icon-button" id="themeButton" aria-label="Toggle colour theme">◐</button>
+                <button class="icon-button saved-button" id="wishlistButton" aria-label="Open wishlist">
+                    ♡<b id="wishlistCount">0</b>
+                </button>
+                <button class="account-button" id="accountButton">
+                    👤 <span id="accountLabel">Sign in</span>
+                </button>
+                <button class="cart-button" id="cartButton" aria-label="Open cart">
+                    🛒 <span>Cart</span>
+                    <b id="cartCount">0</b>
+                </button>
+            </div>
+        </header>
+        <nav class="navbar">
+
+            <div class="nav-left">
+
+                <button id="menuButton" class="menu-btn" aria-label="Browse Categories">
+                    <span class="menu-icon">☰</span>
+                    <span>Browse Categories</span>
+                </button>
+
+                <div id="navLinks" class="nav-links">
+                    <a href="#flashDeals">🔥 Flash Deals</a>
+                    <a href="#products">🆕 New Arrivals</a>
+                    <a href="#bestSellers">⭐ Best Sellers</a>
+                    <a href="#offers">💥 Special Offers</a>
+                    <a href="#why-us">🏆 Why C-Electronics</a>
+                    <a href="#brands">📱 Top Brands</a>
+                    <a href="#footer">📞 Contact</a>
+                </div>
+
+            </div>
+
+        </nav>
+        <main id="top">
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">TECH THAT FITS YOUR LIFE</p>
+                    <h1>
+                        Big deals. <em>Zero hassle.</em>
+                    </h1>
+                    <p>Shop genuine electronics from brands you trust, with secure checkout and quick delivery across Kenya.</p>
+                    <div>
+                        <a class="primary-button" href="#products">Shop flash deals</a>
+                        <a class="text-button" href="#why-us">How it works →</a>
+                    </div>
+                    <ul>
+                        <li>✓ Genuine products</li>
+                        <li>✓ Secure payment</li>
+                        <li>✓ Local support</li>
+                    </ul>
+                </div>
+                <div class="hero-art">
+                    <p>
+                        WEEKEND<br>
+                        <strong>SALE</strong>
+                    </p>
+                    <span>Up to 40% off</span>
+                    <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=900&q=85" alt="Modern television in a living room">
+                </div>
+            </section>
+            <section class="categories" aria-label="Shop by category">
+                <button class="category active" data-category="all">
+                    <i>✦</i>
+                    All products
+                </button>
+                <button class="category" data-category="phones">
+                    <i>▣</i>
+                    Phones
+                </button>
+                <button class="category" data-category="tv">
+                    <i>▰</i>
+                    TVs & audio
+                </button>
+                <button class="category" data-category="laptops">
+                    <i>▤</i>
+                    Computing
+                </button>
+                <button class="category" data-category="appliances">
+                    <i>◉</i>
+                    Appliances
+                </button>
+                <button class="category" data-category="accessories">
+                    <i>⌘</i>
+                    Accessories
+                </button>
+            </section>
+            <section class="flash-deals" id="flashDeals">
+                <div>
+                    <p class="eyebrow">ENDS TODAY</p>
+                    <h2>⚡ Flash deals</h2>
+                    <p>Prices drop while stock lasts.</p>
+                </div>
+                <div class="deal-timer">
+                    <small>TIME LEFT</small>
+                    <strong id="dealClock">06 : 24 : 18</strong>
+                </div>
+                <a class="text-button" href="#products">Shop all deals →</a>
+            </section>
+            <section class="shop-section" id="products">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">MARKETPLACE</p>
+                        <h2>Explore our best deals</h2>
+                    </div>
+                    <div class="toolbar">
+                        <label>
+                            Sort 
+                            <select id="sortSelect">
+                                <option value="featured">Featured</option>
+                                <option value="low">Price: low to high</option>
+                                <option value="high">Price: high to low</option>
+                                <option value="rating">Highest rated</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="catalog-layout">
+                    <aside class="filters">
+                        <h3>Filter products</h3>
+                        <label class="filter-title">Price range</label>
+                        <select id="priceFilter">
+                            <option value="all">Any price</option>
+                            <option value="under20000">Under KES 20,000</option>
+                            <option value="under50000">Under KES 50,000</option>
+                            <option value="above50000">KES 50,000 & above</option>
+                        </select>
+                        <label class="filter-title">Customer rating</label>
+                        <select id="ratingFilter">
+                            <option value="all">Any rating</option>
+                            <option value="4">4 stars & above</option>
+                            <option value="4.5">4.5 stars & above</option>
+                        </select>
+                        <button id="clearFilters" class="filter-clear">Clear filters</button>
+                        <div class="filter-note">
+                            ✓ Genuine products<br>
+                            ✓ Secure payment<br>✓ Delivery across Kenya
+                        </div>
+                    </aside>
+                    <div class="catalog-content">
+                        <p class="results" id="resultsText"></p>
+                        <div class="product-grid" id="productGrid"></div>
+                        <button class="load-more" id="loadMore">Show more products</button>
+                    </div>
+                </div>
+            </section>
+            <section class="benefits" id="why-us">
+                <article>
+                    <span>▣</span>
+                    <h3>Fast, reliable delivery</h3>
+                    <p>We keep you informed from order to doorstep.</p>
+                </article>
+                <article>
+                    <span>◈</span>
+                    <h3>Secure checkout</h3>
+                    <p>Pay safely with M-Pesa or a card at checkout.</p>
+                </article>
+                <article>
+                    <span>↻</span>
+                    <h3>Easy returns</h3>
+                    <p>Changed your mind? Our support team is here to help.</p>
+                </article>
+                <article>
+                    <span>☏</span>
+                    <h3>Human support</h3>
+                    <p>Helpful advice when you need it most.</p>
+                </article>
+            </section>
+        </main>
+        <footer id="footer">
+            <div>
+                <a class="brand" href="#top">
+                    <span>ELECTRONICS</span>
+                    KENYA
+                </a>
+                <p>Smart shopping for Kenya’s modern home.</p>
+            </div>
+            <div>
+                <h3>Shop</h3>
+                <a href="#products">All products</a>
+                <a href="#products">Flash deals</a>
+                <a href="#why-us">Delivery & returns</a>
+            </div>
+            <div>
+                <h3>Help</h3>
+                <a href="tel:+254780826179">0780 826 179</a>
+                <p>Nairobi, Kenya</p>
+            </div>
+        </footer>
+        <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+            <div class="drawer-head">
+                <h2>Your cart</h2>
+                <button class="close-button" data-close="cartDrawer" aria-label="Close cart">×</button>
+            </div>
+            <div id="cartItems" class="cart-items"></div>
+            <div class="cart-footer">
+                <div>
+                    <span>Subtotal</span>
+                    <strong id="cartTotal">KES 0</strong>
+                </div>
+                <button class="primary-button whatsapp-checkout" id="checkoutButton">☏ Checkout on WhatsApp</button>
+            </div>
+        </aside>
+        <aside class="cart-drawer" id="wishlistDrawer" aria-label="Wishlist" aria-hidden="true">
+            <div class="drawer-head">
+                <h2>Saved items</h2>
+                <button class="close-button" data-close="wishlistDrawer" aria-label="Close wishlist">×</button>
+            </div>
+            <div id="wishlistItems" class="cart-items"></div>
+        </aside>
+        <div class="backdrop" id="backdrop"></div>
+        <dialog id="productDialog">
+            <button class="close-button modal-close" data-close="productDialog" aria-label="Close product">×</button>
+            <div id="modalContent"></div>
+        </dialog>
+        <dialog id="accountDialog">
+            <button class="close-button modal-close" data-close="accountDialog" aria-label="Close account">×</button>
+            <form id="loginForm" class="account-form">
+                <p class="eyebrow">MY ACCOUNT</p>
+                <h2>Welcome to Electronics Kenya</h2>
+                <p>Sign in to keep your wishlist and get order updates.</p>
+                <label>
+                    Your name<input id="loginName" required minlength="2" placeholder="Enter your name">
+                </label>
+                <label>
+                    Phone number<input id="loginPhone" required inputmode="tel" placeholder="e.g. 0712 345 678">
+                </label>
+                <button class="primary-button" type="submit">Continue securely</button>
+                
+            </form>
+        </dialog>
+        <div id="toast" class="toast" role="status"></div>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+        <nav class="mobile-bar" aria-label="Mobile navigation">
+            <a href="#top" class="mobile-nav-link active">
+                <i>⌂</i>
+                <span>Home</span>
+            </a>
+            <a href="#products" class="mobile-nav-link">
+                <i>▦</i>
+                <span>Shop</span>
+            </a>
+            <button class="mobile-nav-link" id="mobileWishlist">
+                <i>♡</i>
+                <span>Saved</span>
+                <b id="mobileWishlistCount">0</b>
+            </button>
+            <button class="mobile-nav-link" id="mobileAccount">
+                <i>◉</i>
+                <span>Account</span>
+            </button>
+            <button class="mobile-nav-link" id="mobileCart">
+                <i>🛒</i>
+                <span>Cart</span>
+                <b id="mobileCartCount">0</b>
+            </button>
+        </nav>
+        <script src="app.js"></script>
+    </body>
+</html>
